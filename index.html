@@ -52,6 +52,9 @@
 				<a class="nav-link" href="#results">Results</a>
 			</li>
 			<li class="nav-item">
+				<a class="nav-link" href="#workingnote">Working Note</a>
+			</li>
+			<li class="nav-item">
 				<a class="nav-link" href="#correspondence">Correspondence</a>
 			</li>
 		</ul>
@@ -70,7 +73,7 @@
 <div class="caption text-center">
 	<h1>CAIR</h1>
 	<p><font size="+15">C</font size>ausality-driven  <font size="+15">A</font size>dhoc  <font size="+15">I</font size>nformation  <font size="+15">R</font size>etrieval 
-	<br/><font size="+2"><b><font size="+3">F</font size>orum for <font size="+3">I</font size>nformation <font size="+3">R</font size>etrieval <font size="+3">E</font size>valuation <font size="+3">(FIRE) - 2020 </font size> <br/>Online Event</font size></b></p>
+	<br/><font size="+2"><b><font size="+3">F</font size>orum for <font size="+3">I</font size>nformation <font size="+3">R</font size>etrieval <font size="+3">E</font size>valuation <font size="+3">(FIRE) - 2020 </font size> <br/>December 16th-20th (Online Event)</font size></b></p>
 	<a class="btn btn-outline-light btn-lg" href="#task">Call for Participation</a>
 </div>
 <!-- End Landing Page Section -->
@@ -108,42 +111,51 @@
 	
 	<div class="row text-center">
 	
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div class="feature">
 				<i class="fas fa-server fa-4x" data-fa-transform="shrink-4 up-5"></i>
 				<h3>Corpus</h3>
-				<p align="justify">To develop your system, we provide you a static test collection of news articles constituting the official English ad hoc IR
-				 collection of FIRE. The news articles were crawled from `Telegraph India' published over a period of 10 years (2001 to 2011). Crawled content is
-				 formatted with XML markup into separate categories or domains, such as `sports', `business' etc. The total number of documents
-				 in the collection is over 300k (303291 to be precise). Click below the link and follow instructions to access the corpus.</p>
-				 <!--<p style="color:#F3F0EF;">aaaaaaa</p> -->
-				<p><a href="http://fire.irsi.res.in/fire/static/data" style="text-decoration: none" target="_blank">Click here to get corpus</a></p>
+				<p align="justify">We provide you a static test collection of news articles constituting the official English ad hoc IR collection of FIRE. Access 					to the data will be provided on receipt of the below access form.</p> 
+				<p align="justify">To have an access to the corpus, please email the complete and signed 
+				<a download href="http://fire.irsi.res.in/fire/download/organisational.pdf" style="color: #c95f38;" target="_blank">organisational-access form</a> 					to both <b>fire@isical.ac.in</b> and <b>cair.miners@gmail.com</b>. Organisations may use the 
+				<a download href="http://fire.irsi.res.in/fire/download/individual.pdf" style="color: #c95f38;" target="_blank">individual-access form </a>to manage 					access rights internally and these individual access forms need not be sent to us.
+				<p><a href="http://www.isical.ac.in/~fire/data/docs/adhoc/en.docs.2011.tar.gpg" style="text-decoration: none" target="_blank">Click here to download 					corpus</a></p>
 			</div>
 		</div>
 		
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div class="feature">
 				<i class="fas fa-sliders-h fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>
 				<h3>Train Topics</h3>
 				<p align="justify">We will release a training set comprising 5 topics (with the relevance assessments) followed by 20 test topics to the
 				 participants. Each topic follows the standard TREC format, i.e., is comprised of a 'title' (usually a small number of keywords) and a 					'narrative' (a paragraph describing the relevance criteria in details).</p>
-				 <p style="color:#F3F0EF;">aaaaaaa</p>
-				 <p style="color:#F3F0EF;">aaaaaaa</p>
+				 <!--<p style="color:#F3F0EF;">aaaaaaa</p>
+				 <p style="color:#F3F0EF;">aaaaaaa</p>-->
 				<p><a download href="resources/topics_train.txt" style="text-decoration: none" target="_blank">Download training topics here</a></p>
+				<p><a download href="resources/topics_test.txt" style="text-decoration: none" target="_blank">Download test topics here</a></p>
 				<!-- <p><a href="http://fire.irsi.res.in/fire/static/data" style="text-decoration: none">Download test topics here</a></p> -->
 			</div>
 		</div>
 		
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div class="feature">
 				<i class="fas fa-hourglass-half fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>
-				<h3>Relevance Judgements (train)</h3>
+				<h3>Relevance Judgements</h3>
 				<p align="justify">For the 5 training topics, we provide you binary relevance judgements following TREC format. This will help to analyze the causal
 				relevance which you need to address (instead of the topical relevance). This will also enable you to tune prototype systems and
 				explore a number of early approaches and with the help of the evaluation (using the provided manual assessments) to see what works and what does
 				not.</p>
-				<p style="color:#F3F0EF;">aaaaaaaaa</p>
-				<p><a download href="resources/qrel_train.txt" style="text-decoration: none" target="_blank">Download QRELs here</a></p>
+				<!--<p style="color:#F3F0EF;">aaaaaaaaa</p>-->
+				<p><a download href="resources/qrel_train.txt" style="text-decoration: none" target="_blank">Download judgements here</a></p>
+			</div>
+		</div>
+		
+		<div class="col-md-3">
+			<div class="feature">
+				<i class="fas fa-bookmark fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>
+				<h3>Related Research</h3>
+				<p align="justify">If you are sans suitable reading resources, here is the preprint of our upcoming 
+					<a download href="resources/CausalIR_SIGIR-2020.pdf" style="color: #c95f38;" target="_blank">SIGIR'20 paper</a> (to appear). Might be 							helpul, we believe.</p>
 			</div>
 		</div>
 	</div> <!-- End Row -->
@@ -178,35 +190,35 @@
 		<table class="table lead text-center">
 			 <tr>
 			    <td>Training Data Release</td>
-			    <td>25th June, 2020</td>
+			    <td><del>19<sup>th</sup> June, 2020</del></td>
 			 </tr>
 			 <tr>
 			    <td>Test Data Release</td>
-			    <td>30th July, 2020</td>
+			    <td><del>31<sup>th</sup> July, 2020</del></td>
 			 </tr>
 			 <tr>
 			    <td>Run Submission Deadline</td>
-			    <td>15th August, 2020</td>
+			    <td><del>27<sup>th</sup> August, 2020</del></td>
 			 </tr>
 			 <tr>
-			    <td>Result Declaration</td>
-			    <td>15th September, 2020</td>
+			    <td>Results Declaration</td>
+			    <td>21<sup>th</sup> September, 2020</td>
 			 </tr>
 			 <tr>
 			    <td>Working Note Submission</td>
-			    <td>15th October, 2020</td>
+			    <td>12<sup>th</sup> October, 2020</td>
 			 </tr>
 			 <tr>
 			    <td>Review Notifications</td>
-			    <td>10th November, 2020</td>
+			    <td>20<sup>th</sup> October, 2020</td>
 			 </tr>
 			 <!--<tr>
 			    <td>Overview Paper Submission</td>
 			    <td>xxxxxxxxxxxxxxxxxxxxxx</td>
 			 </tr>-->
 			 <tr>
-			    <td>Camera Ready Due</td>
-			    <td>25th November, 2020</td>
+			    <td>Final Version of Working Note</td>
+			    <td>30<sup>th</sup> November, 2020</td>
 			 </tr>
 		</table>
 	</div>		
@@ -217,24 +229,34 @@
 			<i class="fa fa-bell fa-3x" data-fa-transform="shrink-2 up-1"></i>
 		</div>
 		<table class="table lead">
-			 <tr>
-			    <td><!-- <span class="label new blinking">new</span>  // for blinking label(new)--> 
-			    	<span class="blinking">Keep an eye here to get latest updates.</span>
-			    	
+			<tr>
+			    <td><!--<span class="label new blinking">new</span>  <!--// for blinking label(new)--> 
+			    	<span class="blinking">Check results...</span>	
+			    	<span><a href="#results" style="color:#ff9800;">find here</a></span>		    			    	
 			    </td>
 			 </tr>
-			 <!--<tr> // for other news updates just populate these -for old updates no blink
-			    <td>Peter</td>
+			<tr>
+			    <td><!--<span class="label new blinking">new</span>  <!--// for blinking label(new)--> 
+			    	<span>Results coming soon...</span>			    			    	
+			    </td>
+			 </tr>
+			<tr>
+			    <td><!--<span class="label new blinking">new</span>  <!--// for blinking label(new)--> 
+			    	<span>Run submission deadline extended...</span>			    			    	
+			    </td>
+			 </tr>
+			<tr>
+			    <td><!--<span class="label new blinking">new</span>  <!--// for blinking label(new)--> 
+			    	<span>Test data released...</span>
+			    	<span><a href="#repo" style="color:#ff9800;">find here</a></span>			    	
+			    </td>
 			 </tr>
 			 <tr>
-			    <td>Peter</td>
-			 </tr>
-			 <tr>
-			    <td>Peter</td>
-			 </tr>
-			 <tr>
-			    <td>Peter</td>
-			 </tr> -->
+			    <td><!--<span class="label new blinking">new</span>  <!--// for blinking label(new)--> 
+			    	<span>Training data released...</span>
+			    	<span><a href="#repo" style="color:#ff9800;">find here</a></span>			    	
+			    </td>
+			 </tr>			 
 		</table>
 	</div>
 		
@@ -272,8 +294,8 @@
 			<div class="feature">
 				<i class="fas fa-paperclip fa-4x" data-fa-transform="shrink-4 up-5"></i>
 				<h3>What Do You Submit?</h3>
-				<p align="justify">Your proposed system must generate a 6 column .tsv file following the standard TREC format. In order to encourage the 
-				investigation of different kind of features, three runs per participating group are allowed.</p>
+				<p align="justify">Your proposed system must generate a <b>6 column .tsv file</b> following the standard TREC format. In order to encourage the 
+				investigation of different kind of features, three runs per participating group are allowed. You can send on runs over <b style="color: 				#c95f38;">cair.miners@gmail.com</b>.</p>
 			</div>
 		</div>
 		
@@ -299,13 +321,87 @@
 
 <!-- Start Results Section -->
 <div id="results" class="offset">
+<div class="narrow text-center">
 
-<div class="col-12 narrow text-center">
-	<h1>Know Where You Are?</h1>
-	<p class="lead" align="center">To Be Published....Good Luck!!!!</p>
-	<!-- <a class="btn btn-secondary btn-md" href="resources/FIRE_2020_CausalIR_lab_proposal.pdf" target="_blank">Read More</a> -->
+	<div class="col-12">
+		<h3 class="heading">Know Where You are?</h3>
+		<div class="heading-underline"</div>
+	</div>
+	
+	<!--<p class="lead" align="center">To Be Published....Good Luck!!!!</p>-->
+	<table class="table lead text-center">
+		 <tr style="background-color: #98d6c9;">
+		    <td><span style="font-weight:bold; color:#c95f38;">Run Name</span></td>
+		    <td><span style="font-weight:bold; color:#c95f38;">MAP</span></td>
+		    <td><span style="font-weight:bold; color:#c95f38;">P@5</span></td>
+		 </tr>
+		 <tr>
+		    <td>xxxxxxxxxx</td>
+		    <td>xxxxxxxxxx</td>
+		    <td>xxxxxxxxxx</td>
+		 </tr>
+		 <tr>
+		    <td>xxxxxxxxxx</td>
+		    <td>xxxxxxxxxx</td>
+		    <td>xxxxxxxxxx</td>
+		 </tr>
+	    	 <tr>
+		    <td>xxxxxxxxxx</td>
+		    <td>xxxxxxxxxx</td>
+		    <td>xxxxxxxxxx</td>
+		 </tr>
+		 <tr>
+		    <td>xxxxxxxxxx</td>
+		    <td>xxxxxxxxxx</td>
+		    <td>xxxxxxxxxx</td>
+		 </tr>
+	</table>
+</div>
 </div>
 <!-- End Results Section -->
+
+
+<!-- Start WORKINGNOTE Section -->
+<div id="workingnote" class="offset">
+
+<!-- Start Jumbotron -->
+<div class="jumbotron">
+<div class="narrow text-center">
+
+	<div class="col-12">
+		<h3 class="heading">Articulate Your Model</h3>
+		<div class="heading-underline"</div>
+	</div>
+	
+	<p align="middle"><b style="font-size:20px">We are now accepting submissions. Working notes have to be submitted at <b style="color:#c95f38;">cair.miners@gmail.com</b>. Look at below guidelines before you go -</b></p>
+	<p align="justify"><b style="font-size:22px; color:#36988B;">Submission Guidelines</b></p>
+		<ul align="justify" style="font-size:17px">
+			<li>Submissions must describe <b style="color:#c95f38;">substantial, original and unpublished work</b>. Wherever appropriate, concrete evaluation and 				analysis must be included. If the paper being submitted is under review at any other venue, the same should be explicitly mentioned when making the 				submission. Such a paper, if accepted, should be withdrawn from all other places.</li>
+			<li>All submissions should be in <b style="color:#c95f38;">Single column CEUR format (page??)</b>. Authors should use one of the CEUR Templates below:</li>
+				<ul align="justify" style="font-size:17px">
+					<li><a href="https://www.overleaf.com/read/gwhxnqcghhdt" style="text-decoration: none" target="_blank">Overleaf Template</a></li>
+					<li><a href=" http://ceur-ws.org/Vol-XXX/CEURART.zip" style="text-decoration: none" target="_blank">Word and Latex Template</a></li>
+				</ul>
+			<li>We will <b style="color:#c95f38;">NOT</b> be allowing multiple working notes from the same set of authors.</li>
+			<li>Each paper should have a <b style="color:#c95f38;">copyright</b> clause included in the paper (See the 
+				<a href="http://ceur-ws.org/HOWTOSUBMIT.html" style="text-decoration: none" target="_blank"</a>Author agreement variants</a>)</li>
+			<li>Each author should also submit a <b style="color:#c95f38;">copyright agreement</b> signed by the authors. (Partially filled agreement will be shared 				shortly).</li>
+		</ul>
+	</p>
+	<p align="justify"><b style="font-size:22px; color:#36988B;">Basic Guidelines</b></p>
+		<ul align="justify" style="font-size:17px">
+			<li>Check basic sanity of the paper for grammatical errors and reported results.</li>
+			<li>Papers should have sufficient information for reproducing the mentioned results.</li>
+			<li>Check the papers for text reuse/Plagiarism. This includes self-plagiarism as well. Any paper found to have plagiarized content will be rejected without 				further consideration.</li>
+			<li>Author names should not have any salutations like Dr., Prof., etc.</li>
+		</ul>
+	</p>
+	
+</div> <!-- End Narrow -->
+</div> <!-- End Jumbotron -->
+
+</div>
+<!-- End WORKINGNOTE Section -->
 
 
 
@@ -330,22 +426,22 @@
 			</div>
 			<table class="table lead text-center">
 				 <tr>
-				    <td>Debasis Ganguly, IBM Research Lab, Dublin</td>
+				 <td><a href="https://gdebasis.github.io/" style="color: #1ebba3;">Debasis Ganguly</a>, IBM Research Lab, Dublin</td>
 				 </tr>
 				 <tr>
-				    <td>Charles Jochim, IBM Research Lab, Dublin</td>
+				 <td><a href="https://researcher.watson.ibm.com/researcher/view.php?person=ie-CHARLESJ" style="color: #1ebba3;">Charles Jochim</a>, IBM Research 						Lab, Dublin</td>
 				 </tr>
 				 <tr>
-				    <td>Francesca Bonin, IBM Research Lab, Dublin</td>
+				 <td><a href="https://researcher.watson.ibm.com/researcher/view.php?person=ie-FBonin" style="color: #1ebba3;">Francesca Bonin</a>, IBM Research Lab, 						Dublin</td>
 				 </tr>
 				 <tr>
-				    <td>Suchana Datta, University College Dublin</td>
+				 <td><a href="https://www.linkedin.com/in/suchana-datta-94ba942b/" style="color: #1ebba3;">Suchana Datta</a>, University College Dublin</td>
 				 </tr>
 				 <tr>
-				    <td>Dwaipayan Roy, GESIS, Cologne</td>
+				 <td><a href="https://www.isical.ac.in/~dwaipayan_r/" style="color: #1ebba3;">Dwaipayan Roy</a>, GESIS, Cologne</td>
 				 </tr>
 				 <tr>
-				    <td>Derek Greene, University College Dublin</td>
+				 <td><a href="https://people.ucd.ie/derek.greene" style="color: #1ebba3;">Derek Greene</a>, University College Dublin</td>
 				 </tr>
 			</table>
 		</div>
@@ -358,7 +454,13 @@
 			<p class="lead" align="center">Please reach out to the below in case you have any kind of queries related to the task.</p>
 			<table class="table lead text-center">
 				 <tr>
-				    <td>cair.miners@gmail.com</td>
+				    <td style="color: #1ebba3;">cair.miners@gmail.com</td>
+				 </tr>
+			</table>
+			<p class="lead" align="center">Subscribe below for all latest updates.</p>
+			<table class="table lead text-center">
+				 <tr>
+				    <td style="color: #1ebba3;">cairminers@googlegroups.com</td>
 				 </tr>
 			</table>
 		</div>
